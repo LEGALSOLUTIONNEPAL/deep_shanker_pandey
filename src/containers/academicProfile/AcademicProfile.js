@@ -165,9 +165,6 @@ export default function AcademicProfile({page = "about"}) {
             <span>New York</span>
             <span>93 Scottsville Rd, Rochester, NY 14611</span>
           </p>
-          <div className="academic-social-links">
-            <SocialMedia />
-          </div>
           <p>
             I’m a 5th year Ph.D. Student in Computer Science working with{" "}
             <ExternalLink href="https://www.rit.edu/mining/qi-yu">Prof. Qi Yu</ExternalLink> at the{" "}
@@ -324,6 +321,9 @@ export default function AcademicProfile({page = "about"}) {
         </div>
       </section>
       )}
+      <footer className="academic-social-footer" aria-label="Academic and social profiles">
+        <SocialMedia />
+      </footer>
     </main>
   );
 }

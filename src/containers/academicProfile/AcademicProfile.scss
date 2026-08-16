@@ -77,7 +77,6 @@
 .academic-role { display: flex; flex-direction: column; color: var(--muted); margin-bottom: 28px; }
 .academic-role-heading { color: var(--ink); font-size: clamp(1.25rem, 2.3vw, 1.75rem); font-weight: 800; line-height: 1.35; }
 .academic-role-heading a { font-size: inherit; font-weight: inherit; }
-.academic-social-links { margin: -12px 0 18px; }
 .academic-portrait-wrap {
   position: relative;
   z-index: 1;
@@ -167,6 +166,22 @@
 .cv-date { width: fit-content; height: fit-content; padding: 4px 9px; color: white; background: var(--accent); border-radius: 3px; font-size: .73rem; font-weight: 800; text-transform: uppercase; }
 .cv-list { margin: 0; padding-left: 22px; }
 .cv-list li { margin: 10px 0; }
+
+.academic-social-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 28px;
+  padding: 36px 20px 12px;
+  border-top: 1px solid rgba(120, 130, 150, .24);
+  text-align: center;
+}
+
+.academic-social-footer .social-media-div {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+}
 
 @media (max-width: 800px) {
   .academic-page { padding: 48px 20px 72px; font-size: 16px; }
