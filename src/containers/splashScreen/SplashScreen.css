@@ -15,10 +15,8 @@
   text-decoration: none;
 }
 .splash-title {
-  font-family: "Agustina Regular", cursive;
-  font-weight: bold;
-  font-variant-ligatures: no-common-ligatures;
-  -webkit-font-variant-ligatures: no-common-ligatures;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-weight: 800;
   padding: 0 20px;
 }
 
@@ -51,7 +49,7 @@
 
   .splash-title {
     padding: 0;
-    font-family: "Montserrat Regular", Arial, sans-serif;
+    font-family: "Montserrat", Arial, sans-serif;
     font-weight: 800;
     letter-spacing: -.03em;
   }

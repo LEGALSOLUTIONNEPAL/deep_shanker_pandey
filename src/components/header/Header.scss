@@ -46,8 +46,7 @@
   color: $textColor;
   text-decoration: none;
   border-radius: 10px;
-  transform: translateZ(0);
-  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+  transition: color 0.2s ease, background-color 0.2s ease;
 }
 
 .header li a:hover,
@@ -56,8 +55,7 @@
 }
 
 .header li a:hover {
-  transform: translateY(-3px) translateZ(18px);
-  box-shadow: 0 8px 0 rgba(63, 81, 181, .13), 0 14px 24px rgba(35, 48, 105, .14);
+  color: $buttonColor;
 }
 
 .header .logo {
@@ -68,40 +66,24 @@
   text-decoration: none;
   margin-top: 10px;
   line-height: normal;
-  transform-style: preserve-3d;
-  transform: rotateX(3deg) rotateY(-10deg) translateZ(18px);
-  transform-origin: left center;
-  transition: transform 0.3s ease, filter 0.3s ease;
-  filter: drop-shadow(7px 9px 8px rgba(49, 23, 78, 0.18));
+  transition: color 0.2s ease;
 }
 
 .header .logo:hover {
-  transform: rotateX(0deg) rotateY(0deg) translateZ(32px) translateY(-3px);
-  filter: drop-shadow(10px 13px 10px rgba(49, 23, 78, 0.22));
+  color: $buttonHover;
 }
 
 .header .logo-name {
-  font-family: "Agustina Regular";
-  font-weight: bold;
-  font-variant-ligatures: no-common-ligatures;
-  -webkit-font-variant-ligatures: no-common-ligatures;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-weight: 800;
   padding: 0 10px;
   color: $buttonColor;
-  text-shadow:
-    1px 1px 0 #b77ae7,
-    2px 2px 0 #9954ce,
-    3px 3px 0 #7933ae,
-    4px 4px 0 #55198b,
-    7px 9px 8px rgba(50, 25, 90, 0.28);
+  text-shadow: none;
 }
 
 .dark-menu .logo-name {
   color: #c68cf2;
-  text-shadow:
-    1px 1px 0 #8c43ce,
-    2px 2px 0 #6f2ca8,
-    3px 3px 0 #55198b,
-    6px 8px 10px rgba(0, 0, 0, 0.5);
+  text-shadow: none;
 }
 
 /* menu */
@@ -121,8 +103,8 @@
   padding: 28px 20px;
   position: relative;
   user-select: none;
-  transform: rotateX(9deg) rotateY(-8deg);
-  filter: drop-shadow(0 5px 3px rgba(20, 31, 55, .22));
+  transform: none;
+  filter: none;
 }
 
 .header .menu-label {
@@ -262,7 +244,7 @@
   .dark-menu .logo-name {
     padding: 0;
     color: $textColor;
-    font-family: "Montserrat Regular", Arial, sans-serif;
+    font-family: "Montserrat", Arial, sans-serif;
     font-weight: 800;
     letter-spacing: -.02em;
     text-shadow: none;
