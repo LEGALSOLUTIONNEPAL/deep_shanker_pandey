@@ -160,13 +160,10 @@ export default function AcademicProfile({page = "about"}) {
             <span className="academic-role-heading">
               Applied Scientist at Amazon
             </span>
-            <span>Ph.D. in Computer Science, Rochester Institute of Technology</span>
+            <span>Ph.D. in Computing and Information Sciences, Rochester Institute of Technology</span>
           </p>
           <p>
-            I am currently an Applied Scientist at Amazon. I completed my Ph.D. in Computer Science at Rochester Institute of Technology two years ago, where I worked with{" "}
-            <ExternalLink href="https://www.rit.edu/mining/qi-yu">Prof. Qi Yu</ExternalLink> at the{" "}
-            <ExternalLink href="https://www.rit.edu/mining/">Machine Learning and Data Intensive Computing Lab</ExternalLink>. I completed my undergraduate degree in Electronics and Communication Engineering from the{" "}
-            <ExternalLink href="https://pcampus.edu.np/">Institute of Engineering, Pulchowk Campus</ExternalLink>, Nepal.
+            I am an Applied Scientist at Amazon with experience in machine learning, recommendation systems, uncertainty estimation, and large-scale AI systems. I completed my Ph.D. in Computing and Information Sciences, where my research focused on evidential deep learning, calibrated uncertainty modeling, and robust AI.
           </p>
         </div>
         <div className="academic-portrait-wrap">
