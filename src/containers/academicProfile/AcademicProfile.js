@@ -158,19 +158,14 @@ export default function AcademicProfile({page = "about"}) {
           <h1>Deep Shankar Pandey</h1>
           <p className="academic-role">
             <span className="academic-role-heading">
-              <ExternalLink href="https://pandeydeep9.github.io/#">Ph.D. Student</ExternalLink>
-              <span aria-hidden="true"> · </span>
-              Rochester Institute of Technology
+              Applied Scientist at Amazon
             </span>
-            <span>New York</span>
-            <span>93 Scottsville Rd, Rochester, NY 14611</span>
+            <span>Ph.D. in Computer Science, Rochester Institute of Technology</span>
           </p>
           <p>
-            I’m a 5th year Ph.D. Student in Computer Science working with{" "}
+            I am currently an Applied Scientist at Amazon. I completed my Ph.D. in Computer Science at Rochester Institute of Technology two years ago, where I worked with{" "}
             <ExternalLink href="https://www.rit.edu/mining/qi-yu">Prof. Qi Yu</ExternalLink> at the{" "}
-            <ExternalLink href="https://www.rit.edu/mining/">
-              Machine Learning and Data Intensive Computing Lab, RIT
-            </ExternalLink>. I completed my undergraduate degree in Electronics and Communication Engineering from the{" "}
+            <ExternalLink href="https://www.rit.edu/mining/">Machine Learning and Data Intensive Computing Lab</ExternalLink>. I completed my undergraduate degree in Electronics and Communication Engineering from the{" "}
             <ExternalLink href="https://pcampus.edu.np/">Institute of Engineering, Pulchowk Campus</ExternalLink>, Nepal.
           </p>
         </div>
