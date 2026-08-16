@@ -40,6 +40,10 @@
   background-color: $github;
 }
 
+.google-scholar i {
+  background-color: #4285f4;
+}
+
 .gitlab i {
   background-color: $gitlab;
 }
@@ -73,6 +77,7 @@
 .google i:hover,
 .gitlab i:hover,
 .github i:hover,
+.google-scholar i:hover,
 .linkedin i:hover,
 .facebook i:hover,
 .instagram i:hover,

@@ -1,5 +1,6 @@
 import React, {useContext} from "react";
 import StyleContext from "../../contexts/StyleContext";
+import SocialMedia from "../../components/socialMedia/SocialMedia";
 import "./AcademicProfile.scss";
 
 const ExternalLink = ({href, children}) => (
@@ -164,6 +165,9 @@ export default function AcademicProfile({page = "about"}) {
             <span>New York</span>
             <span>93 Scottsville Rd, Rochester, NY 14611</span>
           </p>
+          <div className="academic-social-links">
+            <SocialMedia />
+          </div>
           <p>
             I’m a 5th year Ph.D. Student in Computer Science working with{" "}
             <ExternalLink href="https://www.rit.edu/mining/qi-yu">Prof. Qi Yu</ExternalLink> at the{" "}
