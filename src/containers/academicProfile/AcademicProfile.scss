@@ -195,8 +195,29 @@
 
 @media (max-width: 800px) {
   .academic-page { padding: 48px 20px 72px; font-size: 16px; }
-  .academic-hero { min-height: auto; grid-template-columns: 1fr; gap: 36px; padding-bottom: 72px; }
-  .academic-portrait-wrap { max-width: 320px; order: -1; transform: rotateY(-5deg) rotateX(2deg) translateZ(20px); }
+  .academic-hero { min-height: auto; grid-template-columns: 1fr; gap: 32px; padding-bottom: 72px; }
+  .academic-copy { text-align: center; transform: none; }
+  .academic-copy > p:last-child { text-align: left; }
+  .academic-role { align-items: center; }
+  .academic-hero h1, .academic-hero h1:hover {
+    margin: 4px auto 22px;
+    transform: none;
+  }
+  .academic-portrait-wrap {
+    width: calc(100% - 24px);
+    max-width: 320px;
+    margin: 8px auto 0;
+    order: -1;
+    transform: none;
+  }
+  .academic-portrait-wrap:hover { transform: translateY(-4px); }
+  .academic-portrait-wrap::before {
+    inset: -9px;
+    transform: none;
+    border-width: 1px;
+    box-shadow: 0 14px 32px rgba(35, 48, 105, .16);
+  }
+  .academic-portrait-wrap::after { display: none; }
   .news-item { grid-template-columns: 1fr; gap: 4px; }
   .academic-section { padding: 64px 0; }
   .projects-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }

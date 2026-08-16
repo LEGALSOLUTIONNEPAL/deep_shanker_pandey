@@ -20,7 +20,9 @@ function Header() {
           className="menu-icon"
           htmlFor="menu-btn"
           style={{color: "white"}}
+          aria-label="Open navigation menu"
         >
+          <span className="menu-label">Menu</span>
           <span className={isDark ? "navicon navicon-dark" : "navicon"}></span>
         </label>
         <ul className={isDark ? "dark-menu menu" : "menu"}>

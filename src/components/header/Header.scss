@@ -125,6 +125,10 @@
   filter: drop-shadow(0 5px 3px rgba(20, 31, 55, .22));
 }
 
+.header .menu-label {
+  display: none;
+}
+
 .header .menu-icon .navicon {
   background: $iconBackground;
   display: block;
@@ -218,6 +222,102 @@
 @media (max-width: 960px) and (min-width: 768px) {
   .header {
     font-size: 12px;
+  }
+}
+
+@media (max-width: 767px) {
+  .headroom-wrapper {
+    max-height: 74px;
+  }
+
+  .header {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: center;
+    padding: 11px 14px;
+  }
+
+  .header .logo {
+    float: none;
+    min-width: 0;
+    margin: 0;
+    overflow: hidden;
+    font-size: clamp(.82rem, 3.6vw, 1rem);
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    transform: none;
+    filter: none;
+  }
+
+  .header .logo:hover {
+    transform: none;
+    filter: none;
+  }
+
+  .header .logo .grey-color {
+    display: none;
+  }
+
+  .header .logo-name,
+  .dark-menu .logo-name {
+    padding: 0;
+    color: $textColor;
+    font-family: "Montserrat Regular", Arial, sans-serif;
+    font-weight: 800;
+    letter-spacing: -.02em;
+    text-shadow: none;
+  }
+
+  .dark-menu .logo-name {
+    color: $textColorDark;
+  }
+
+  .header .menu-icon {
+    display: inline-flex;
+    float: none;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    min-width: 82px;
+    padding: 10px 13px;
+    color: $textColor !important;
+    background: $lightBackground1;
+    border: 1px solid rgba(63, 81, 181, .3);
+    border-radius: 12px;
+    box-shadow: 0 5px 12px rgba(35, 48, 105, .12);
+    transform: none;
+    filter: none;
+  }
+
+  .dark-menu .menu-icon {
+    color: $textColorDark !important;
+    background: $darkBackground;
+    border-color: rgba(156, 169, 255, .45);
+  }
+
+  .header .menu-label {
+    display: inline;
+    font-size: .85rem;
+    font-weight: 750;
+  }
+
+  .header .menu {
+    grid-column: 1 / -1;
+    width: 100%;
+    border-radius: 14px;
+  }
+
+  .header .menu-btn:checked ~ .menu {
+    max-height: 430px;
+    margin-top: 10px;
+    padding: 6px 0;
+    border: 1px solid rgba(120, 130, 150, .18);
+    box-shadow: 0 14px 28px rgba(20, 31, 55, .12);
+  }
+
+  .header li a {
+    padding: 11px 15px;
+    text-align: center;
   }
 }
 

@@ -21,3 +21,38 @@
   -webkit-font-variant-ligatures: no-common-ligatures;
   padding: 0 20px;
 }
+
+@media (max-width: 767px) {
+  .splash-container {
+    box-sizing: border-box;
+    justify-content: center;
+    min-height: 100svh;
+    padding: 24px 18px;
+    gap: 26px;
+  }
+
+  .splash-animation-container {
+    width: 180px;
+    height: 180px;
+    flex: 0 0 180px;
+  }
+
+  .splash-title-container {
+    width: 100%;
+    font-size: clamp(1.15rem, 6vw, 1.65rem);
+    line-height: 1.25;
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  .splash-title-container .grey-color {
+    display: none;
+  }
+
+  .splash-title {
+    padding: 0;
+    font-family: "Montserrat Regular", Arial, sans-serif;
+    font-weight: 800;
+    letter-spacing: -.03em;
+  }
+}
