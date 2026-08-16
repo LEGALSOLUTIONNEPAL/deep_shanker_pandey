@@ -322,6 +322,12 @@ export default function AcademicProfile({page = "about"}) {
       </section>
       )}
       <footer className="academic-social-footer" aria-label="Academic and social profiles">
+        <nav className="academic-footer-nav" aria-label="Footer navigation">
+          <a href="/" aria-current={page === "about" ? "page" : undefined}>About</a>
+          <a href="/publications" aria-current={page === "publications" ? "page" : undefined}>Publications</a>
+          <a href="/projects" aria-current={page === "projects" ? "page" : undefined}>Projects</a>
+          <a href="/cv" aria-current={page === "cv" ? "page" : undefined}>CV</a>
+        </nav>
         <SocialMedia />
       </footer>
     </main>
