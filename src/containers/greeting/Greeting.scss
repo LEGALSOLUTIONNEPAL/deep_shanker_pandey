@@ -45,7 +45,41 @@
 .greeting-text {
   font-size: 70px;
   line-height: 1.1;
+  font-weight: 800;
+  letter-spacing: -0.035em;
   color: $textColor !important;
+  transform: perspective(700px) rotateX(2deg) rotateY(-2deg);
+  transform-origin: left center;
+  text-shadow:
+    1px 1px 0 #c7c9dc,
+    2px 2px 0 #aeb2ce,
+    3px 3px 0 #9499bd,
+    4px 4px 0 #787fa9,
+    7px 9px 12px rgba(34, 36, 70, 0.24),
+    14px 18px 28px rgba(34, 36, 70, 0.16);
+  transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+.greeting-text:hover {
+  transform: perspective(700px) rotateX(0deg) rotateY(0deg)
+    translate(-2px, -3px);
+  text-shadow:
+    1px 1px 0 #c7c9dc,
+    2px 2px 0 #aeb2ce,
+    3px 3px 0 #9499bd,
+    4px 4px 0 #787fa9,
+    5px 5px 0 #626a98,
+    10px 13px 16px rgba(34, 36, 70, 0.25),
+    18px 24px 34px rgba(34, 36, 70, 0.16);
+}
+
+.dark-mode.greeting-text {
+  text-shadow:
+    1px 1px 0 #626a98,
+    2px 2px 0 #4c537f,
+    3px 3px 0 #393f68,
+    4px 4px 0 #292e50,
+    8px 11px 16px rgba(0, 0, 0, 0.45);
 }
 
 .greeting-text-p {
@@ -106,6 +140,7 @@
   .greeting-text {
     font-size: 30px;
     text-align: center;
+    transform-origin: center;
   }
   .greeting-text-p {
     font-size: 16px;
@@ -117,6 +152,12 @@
   }
   .greeting-image-div {
     height: 256px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .greeting-text {
+    transition: none;
   }
 }
 

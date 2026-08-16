@@ -69,12 +69,15 @@
   margin-top: 10px;
   line-height: normal;
   transform-style: preserve-3d;
-  transform: rotateY(-7deg) translateZ(18px);
-  transition: transform 0.3s ease;
+  transform: rotateX(3deg) rotateY(-10deg) translateZ(18px);
+  transform-origin: left center;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  filter: drop-shadow(7px 9px 8px rgba(49, 23, 78, 0.18));
 }
 
 .header .logo:hover {
-  transform: rotateY(0deg) translateZ(30px) translateY(-2px);
+  transform: rotateX(0deg) rotateY(0deg) translateZ(32px) translateY(-3px);
+  filter: drop-shadow(10px 13px 10px rgba(49, 23, 78, 0.22));
 }
 
 .header .logo-name {
@@ -84,7 +87,21 @@
   -webkit-font-variant-ligatures: no-common-ligatures;
   padding: 0 10px;
   color: $buttonColor;
-  text-shadow: 1px 1px 0 rgba(140, 67, 206, .28), 2px 2px 0 rgba(85, 25, 139, .2), 4px 5px 10px rgba(50, 25, 90, .18);
+  text-shadow:
+    1px 1px 0 #b77ae7,
+    2px 2px 0 #9954ce,
+    3px 3px 0 #7933ae,
+    4px 4px 0 #55198b,
+    7px 9px 8px rgba(50, 25, 90, 0.28);
+}
+
+.dark-menu .logo-name {
+  color: #c68cf2;
+  text-shadow:
+    1px 1px 0 #8c43ce,
+    2px 2px 0 #6f2ca8,
+    3px 3px 0 #55198b,
+    6px 8px 10px rgba(0, 0, 0, 0.5);
 }
 
 /* menu */
@@ -201,5 +218,11 @@
 @media (max-width: 960px) and (min-width: 768px) {
   .header {
     font-size: 12px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .header .logo {
+    transition: none;
   }
 }
