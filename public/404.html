@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Opening page...</title>
+    <script>
+      (function () {
+        try {
+          sessionStorage.setItem("spa-redirect", window.location.href);
+        } catch (error) {
+          // Continue to the homepage if browser storage is unavailable.
+        }
+        window.location.replace(window.location.origin + "/");
+      })();
+    </script>
+  </head>
+  <body>
+    <p>Opening the requested page...</p>
+  </body>
+</html>

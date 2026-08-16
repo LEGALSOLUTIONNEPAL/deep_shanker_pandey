@@ -4,6 +4,26 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <!-- Restore deep links redirected by GitHub Pages' 404 fallback. -->
+    <script>
+      (function () {
+        try {
+          var redirectUrl = sessionStorage.getItem("spa-redirect");
+          if (redirectUrl) {
+            sessionStorage.removeItem("spa-redirect");
+            var target = new URL(redirectUrl);
+            history.replaceState(
+              null,
+              "",
+              target.pathname + target.search + target.hash
+            );
+          }
+        } catch (error) {
+          // The homepage remains usable when browser storage is unavailable.
+        }
+      })();
+    </script>
+
     <!-- Edit meta tags for SEO -->
     <title>DeveloperFolio | Developer Portfolio Template</title>
     <meta name="title" content="DeveloperFolio | Developer Portfolio Template">
