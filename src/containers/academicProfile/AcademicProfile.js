@@ -183,7 +183,7 @@ export default function AcademicProfile({page = "about"}) {
         </p>
         <div className="academic-actions">
           <ExternalLink href="https://pandeydeep9.github.io/assets/pdf/deep_resume_oct14_2023.pdf">
-            Deep Resume — updated October 14, 2023
+            Resume
           </ExternalLink>
           <ExternalLink href="https://pandeydeep9.github.io/publications/">Research Publications</ExternalLink>
         </div>
