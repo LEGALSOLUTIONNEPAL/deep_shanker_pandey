@@ -212,7 +212,7 @@ export default function AcademicProfile({page = "about"}) {
           {news.map(item => (
             <article className="news-item" key={item.date}>
               <time>{item.date}</time>
-              <p>{item.content} <span aria-hidden="true">✨</span></p>
+              <p>{item.content}</p>
             </article>
           ))}
         </div>
