@@ -192,10 +192,11 @@
   .header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
   }
   .header .menu {
     max-height: none;
+    margin: 0 auto;
   }
   .header .menu-icon {
     display: none;
@@ -214,7 +215,7 @@
 
   .header {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-columns: 1fr;
     align-items: center;
     padding: 11px 14px;
   }
@@ -269,6 +270,7 @@
     box-shadow: 0 5px 12px rgba(35, 48, 105, .12);
     transform: none;
     filter: none;
+    justify-self: center;
   }
 
   .dark-menu .menu-icon {
